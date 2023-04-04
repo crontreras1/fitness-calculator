@@ -4,35 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+    <title>🔢 Calculadora Fitness</title>
 </head>
+
 <body>
-    <section class="genre">
+    <header class="header">
+        <h1 class="title">Calculadora Fitness</h1>
+    </header>
+
+    <section class="container-intro">
+        <p class="intro">¿Quieres saber cuantas calorias debes consumir por día?</p>
+        <p class="intro">llena los siguientes datos 👇🏻</p>
+    </section>
+
+    <section class="calculator-form-container">
         <form action="">
-            <div>
+            <div class="genre-cards">
                 <input type="radio" name="select-genre" id="male-button">
-                <label for="male-button">
-                    <img src="" alt="">
+                <label class="male-button" for="male-button">
+                    <p class="genre-emoji">🙋🏻‍♂️</p>
                     <p>Masculino</p>
                 </label>
         
                 <input type="radio" name="select-genre" id="female-button">
-                <label for="female-button">
-                    <img src="" alt="">
+                <label class="female-button" for="female-button">
+                    <p class="genre-emoji">🙋🏻‍♀️</p>
                     <p>Femenino</p>
                 </label>
             </div>
-
-            <label for="input-weight">Escribe tu peso en kilogramos</label>
-            <input type="number" id="input-weight" placeholder="65 Kg.">
-            
-            <label for="input-height">Escribe tu altura en centímetros</label>
-            <input type="number" id="input-height" placeholder="172 Cm.">
-            
-            <label for="input-age">Escribe tu edad</label>
-            <input type="number" id="input-age" placeholder="25 años">
-
-            <input type="submit" id="calc-equation" value="Calcular mi requerimiento calórico">
+            <div class="form-fill">
+                <label for="input-weight">Escribe tu peso en kilogramos</label>
+                <input type="number" id="input-weight" placeholder="65 Kg.">
+                
+                <label for="input-height">Escribe tu altura en centímetros</label>
+                <input type="number" id="input-height" placeholder="172 Cm.">
+                
+                <label for="input-age">Escribe tu edad</label>
+                <input type="number" id="input-age" placeholder="25 años">
+    
+                <input type="submit" id="calc-equation" value="Calcular mi requerimiento calórico">
+            </div>
 
             <p id="answer"></p>
         </form>
